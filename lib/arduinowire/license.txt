@@ -1,0 +1,1 @@
+Taken from the arduino project: https://github.com/arduino/Arduino/tree/1.0.6/libraries/Wire
