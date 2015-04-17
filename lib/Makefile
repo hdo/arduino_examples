@@ -7,10 +7,12 @@ all:
 	$(MAKE) -C eeprom
 	$(MAKE) -C timerone
 	$(MAKE) -C panstamp
+	$(MAKE) -C adafruitdht
 
 clean:
 	$(MAKE) clean -C arduino
 	$(MAKE) clean -C eeprom
 	$(MAKE) clean -C timerone
 	$(MAKE) clean -C panstamp
+	$(MAKE) clean -C adafruitdht
 	
