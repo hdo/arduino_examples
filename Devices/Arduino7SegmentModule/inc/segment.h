@@ -23,6 +23,7 @@ struct sVALUE {
 	uint8_t d1; // pre-calculated digit values
 	uint8_t d2; // pre-calculated digit values
 	uint8_t d3; // pre-calculated digit values
+	uint8_t mode; // 0-normal, 1-blink
 };
 
 void segment_init();
