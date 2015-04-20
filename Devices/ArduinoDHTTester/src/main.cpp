@@ -2,7 +2,7 @@
 
 #include "DHT.h"
 
-#define DHTPIN 2     // what pin we're connected to
+#define DHTPIN 9     // what pin we're connected to
 
 // Uncomment whatever type you're using!
 //#define DHTTYPE DHT11   // DHT 11
@@ -28,7 +28,7 @@ DHT dht(DHTPIN, DHTTYPE);
 //DHT dht(DHTPIN, DHTTYPE, 30);
 
 void setup() {
-	Serial.begin(9600);
+	Serial.begin(38400);
 	Serial.println("DHTxx test!");
 
 	dht.begin();
@@ -57,6 +57,7 @@ void loop() {
 	Serial.print("Temperature: ");
 	Serial.print(t);
 	Serial.print(" *C ");
+	Serial.println();
 }
 
 int main(void) {
