@@ -52,9 +52,7 @@ CXXFLAGS += -fpack-struct
 CXXFLAGS += -fshort-enums
 CXXFLAGS += -finline-limit=20
 CXXFLAGS += -Wall
-CXXFLAGS += -Wstrict-prototypes
 CXXFLAGS += -Wundef
-CXXFLAGS += -std=gnu99
 CXXFLAGS += -mcall-prologues
 CXXFLAGS += -Wundef
 CXXFLAGS += -mmcu=$(MCU)
