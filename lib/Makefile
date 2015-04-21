@@ -10,6 +10,7 @@ all:
 	$(MAKE) -C panstamp
 	$(MAKE) -C adafruitdht
 	$(MAKE) -C adafruitbmp085
+	$(MAKE) -C arduinodht22
 
 clean:
 	$(MAKE) clean -C arduino
@@ -19,4 +20,5 @@ clean:
 	$(MAKE) clean -C panstamp
 	$(MAKE) clean -C adafruitdht
 	$(MAKE) clean -C adafruitbmp085
+	$(MAKE) clean -C arduinodht22
 	
