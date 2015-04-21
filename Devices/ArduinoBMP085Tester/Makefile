@@ -41,7 +41,7 @@ LIBPATHS  = -L../../lib/arduino -L../../lib/arduinowire -L../../lib/adafruitbmp0
  
 
 # Libraries to link
-LIBS  = -lm -ladafruitbmp085 -larduinowire -larduino -lc
+LIBS  = -lc -lm -ladafruitbmp085 -larduinowire -larduino -lc
 
 OBJS = $(CPP_SRC:.cpp=.o)
 
