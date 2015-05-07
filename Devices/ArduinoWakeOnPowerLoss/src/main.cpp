@@ -7,9 +7,9 @@
 void setup() {
 	// initialize the digital pin as an output:
 	pinMode(LED_PIN, OUTPUT);
-	pinMode(SW_PIN, OUTPUT);
+	pinMode(SW_PIN, INPUT);
 	digitalWrite(LED_PIN, LOW);    // set the LED off
-	digitalWrite(SW_PIN, HIGH);    // set the LED off
+	//digitalWrite(SW_PIN, HIGH);    // set the LED off
 }
 
 // the loop() method runs over and over again,
@@ -27,19 +27,22 @@ int main(void) {
 	init();
 	setup();
 
-	for(int i=0; i < 7; i++) {
+	for(int i=0; i < 15; i++) {
 		digitalWrite(LED_PIN, HIGH);
-		delay(200);
+		delay(100);
 		digitalWrite(LED_PIN, LOW);
-		delay(200);
+		delay(100);
 	}
 
+	digitalWrite(SW_PIN, HIGH);
+	pinMode(SW_PIN, OUTPUT);
 	digitalWrite(SW_PIN, HIGH);
 	delay(200);
 	digitalWrite(SW_PIN, LOW);
 	delay(500);
 	digitalWrite(SW_PIN, HIGH);
 	delay(200);
+	pinMode(SW_PIN, INPUT);
 
 	while (true) {
 		loop();
